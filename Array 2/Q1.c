@@ -9,27 +9,30 @@ int main(){
 	
 	printf("Enter the element of columns : ");
 	scanf("%d",&n);
-	
+    
+	printf("\n");	
 
 	int i,j;
-	int a[i][j];
+	int a[m][n];
 	
-	for(i=0; i<=2; i++){
+	for(i=0; i<m; i++){
 		
-		for(j=0; j<=2; j++){
+		for(j=0; j<n; j++){
 			
-			printf(" Enter element of a[%d][%d] :",i,j);
+			printf(" Enter element of a[%d][%d] : ",i,j);
 			scanf("%d",&a[i][j]);
 		}
 	}
 	
-	for(i=0; i<=2; i++){
+	printf("\n");
+	for(i=0; i<m; i++){
 		
-		for(j=0; j<=2; j++){
+		for(j=0; j<n; j++){
 			
-			printf("%d",a[i][j]);
+			printf(" %d ",a[i][j]);
 		}
 		printf("\n");
 	}
 	return 0;
 }
+
